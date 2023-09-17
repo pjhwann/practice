@@ -1,1 +1,179 @@
 
+
+
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link href="css/jquery-ui.css" rel="Stylesheet" type="text/css" /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" type="text/javascript"></script>
+    <link href="js/intro.js-2.9.3/introjs.css" rel="stylesheet" />
+    <script src="js/feedback_form_intro.js"></script>
+    <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <script src="js/DataTables-1.10.16/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <link href="js/DataTables-1.10.16/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="js/Creating-A-Loading-Indicator-with-jQuery-CSS3/dist/jquery.loading-indicator.css" rel="stylesheet" type="text/css" />
+    <script src="js/Creating-A-Loading-Indicator-with-jQuery-CSS3/dist/jquery.loading-indicator.js" type="text/javascript"></script>
+
+    <script src="js/vex-3.0.0/dist/js/vex.combined.min.js" type="text/javascript"></script>
+    <script type="text/javascript">vex.defaultOptions.className = 'vex-theme-wireframe'</script>
+    <link rel="stylesheet" href="js/vex-3.0.0/dist/css/vex.css" type="text/css" /><link rel="stylesheet" href="js/vex-3.0.0/dist/css/vex-theme-wireframe.css" type="text/css" /><link rel="stylesheet" href="js/vex-3.0.0/dist/css/vex-theme-bottom-right-corner.css" type="text/css" /><link rel="stylesheet" href="js/DataTables-1.10.16/css/jquery.dataTables.min.css" type="text/css" /><link href="../css/sff.css?ts=9/17/2023 3:56:00 PM" rel="Stylesheet" type="text/css" /><title>
+	SFF
+</title>
+    <script src="js/process_questions.js.aspx" type="text/javascript"></script>
+    <script src="js/verify_feedback_form.js" type="text/javascript"></script>
+<link href="css/studentSFF.css" rel="stylesheet" type="text/css" />
+    <script src="js/sff.js.aspx?ts=9/17/2023 3:56:00 PM" type="text/javascript"></script>
+    <link href="css/AutoSave-css.css" rel="stylesheet" type="text/css" /></head>
+<body>
+    <div class="container-fluid">
+        <script type="text/javascript">
+            //CREATE PAGE SPINNER HERE SO IT CAN BE USED ON ALL PAGES AND MODULES; NEED TO LOAD IN BODY B/C IF LOADED IN HEAD, IT WON'T BE RECOGNIZED
+            var spinner = $("body").loadingIndicator({
+                useImage: false
+            }).data("loadingIndicator");
+        </script>
+        <noscript>
+            <div id="noScriptContainer">
+                <div id="noScriptTitle">JavaScript Required</div>
+                <div id="noScriptContent">We're sorry, but in order for the SFF website to function properly, JavaScript must be enabled.</div>
+            </div>
+        </noscript>
+        <div id="siteFrame1 row">
+            <div class="col-lg-2"></div>
+            <div class="col-sm-12 col-md-12 col-lg-8">
+                <div id="header">
+                    <div id="headerImg">
+                        <img alt="Temple logo" src="../images/logos/TU_Primary_Red_Black_small.png" style="width: 100%; height: auto;" />
+                    </div>
+                    <div id="headerText">
+                        STUDENT FEEDBACK FORMS<br />
+                        CONVENIENT. CONFIDENTIAL. IMPORTANT.
+                    </div>
+                    <div id="headerOverlay"></div>
+                </div>
+                <form method="post" action="./student.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTIxMDIxMzM4MDAPZBYCZg9kFgICAQ9kFgQCAQ8PFgIeB1Zpc2libGVoZGQCAw9kFgoCAQ9kFgICAQ8PFgIeBFRleHQFyAE8YnIvPjxiPkNvdXJzZSBOYW1lOjwvYj4gTGVhZGVyc2hpcCAmIE9yZ2FuIE1hbmFnZW1lbnQ8YnIvPjxiPkNSTjo8L2I+IDI1NzAyPGJyLz48Yj5TZW1lc3Rlcjo8L2I+IEZhbGwgMjAyMzxici8+PGI+SW5zdHJ1Y3RvcihzKTo8L2I+IFBhcmssIEp1bmdod2FuPGJyLz48Yj5GZWVkYmFjayBQZXJpb2Q6PC9iPiAxMS8xNS8yMDIzIC0gMTIvMTMvMjAyM2RkAgMPDxYCHwBoZGQCBQ8WAh8AaGQCBw8WAh8AaGQCDQ9kFggCAQ8PFgIfAGhkZAIDDw8WAh8AaGRkAgUPDxYCHwBoZGQCBw8PFgIfAGhkZGRx95mJLQQVNpNZ53VIMSGDiD44Tveo1l3jqlW3vrm8JA==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="729D3EA9" />
+</div>
+                    <br />
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-12">
+                                <div class="panel panel-default" style="opacity: 0.9; height: auto; margin-bottom: 0px;">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="page-header" style="margin: 0px;">
+                                                    <nav class="nav navbar navbar-default" style="margin-bottom: 0px;">
+                                                        <div class="container-fluid">
+                                                            <div class="navbar-header">
+                                                                <a class="navbar-brand" href="#">STUDENT FEEDBACK FORMS</a>
+                                                            </div>
+                                                            <ul class="nav navbar-nav">
+                                                                <li><a href="https://tuportal.temple.edu" target="_blank" aria-label="TUportal hyperlink">TUportal</a></li>
+                                                                <li><a href="https://temple.edu" target="_blank" aria-label="Temple hyperlink">Temple</a></li>
+                                                            </ul>
+                                                            
+                                                        </div>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        
+    <script type="text/javascript">
+        //SPINNER IS LOADED ON ALL PAGES SO HAVE TO HIDE IT HERE AND HAS TO BE HIDDEN IN BODY, RATHER THAN HEAD
+        $(window).on('load', function () {
+            removeLoader();
+        });
+        function removeLoader() {
+            spinner.hide()
+        }
+    </script>
+    <div class="row">
+        <div id="ContentPlaceHolder1_titleInformation" class="col-lg-9">
+	
+            <img alt="course information" src="images/headers/courseinstinfo.gif" style="margin-left: -4px;" />
+            <span id="ContentPlaceHolder1_lblCourseInfo"><br/><b>Course Name:</b> Leadership & Organ Management<br/><b>CRN:</b> 25702<br/><b>Semester:</b> Fall 2023<br/><b>Instructor(s):</b> Park, JJJJJJJ123<br/><b>Feedback Period:</b> 11/15/2023 - 12/13/2023</span>
+        
+</div>
+        <div class="col-lg-3">
+            <a class="btn btn-danger glyphicon glyphicon-question-sign pull-right" title="Help" href="javascript:void(0);" onclick="javascript:startFeedbackFormIntro();"></a>
+            
+        </div>
+    </div>
+    <hr />
+    
+    <div class="row">
+        
+    </div>
+    <div class="row">
+        <section class="content">
+            <div class="col-md-12" style="padding: 0px;">
+                <div class="panel questionPanel">
+                    <div id="ContentPlaceHolder1_divPanelTables" class="panel-body">
+                        <div id="Tabs" role="tabpanel">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            </ul>
+                        </div>
+                        <div id="divTables" class="tab-content">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+    <div id="panelButtons">
+	
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <div id="divCommandButtons" class="pull-right">
+                    
+                    
+                    
+                </div>
+                <div id="divExitbutton" class="pull-left">
+                    
+                </div>
+            </div>
+        </div>
+    
+</div>
+
+                                        <br />
+                                        <div id="footer">
+                                            <div id="innerFooter" class="row">
+                                                <span>CREATED & MAINTAINED BY</span><br />
+                                                <a href="https://its.temple.edu" target="_blank" aria-label="Information Technology Services">
+                                                    <img src="images/logos/TU_Primary_Red_Black_small.png" class="its_logo" alt="Information Technology Services Logo" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+    
+    <div id="users-device-size">
+        <div id="xs" class="visible-xs"></div>
+        <div id="sm" class="visible-sm"></div>
+        <div id="md" class="visible-md"></div>
+        <div id="lg" class="visible-lg"></div>
+    </div>
+    <script type="text/javascript" src="js/intro.js-2.9.3/intro.js"></script>
+    <script type="text/javascript">getAnnouncements("student");</script>
+</body>
+</html>
